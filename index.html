@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Book Trivia Game</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+
+     <div class="jumbotron">
+      <div class="container">
+        <div class="row">
+          <h1 class="text-center">Book Trivia Game</h1>
+          <div class="mainArea col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+      <div id="start"><p id="instructions">Answer all the questions before the time runs out!</p>
+      <input type="start" id="button" class="btn btn-info" value="Start">
+      </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <div id="score">
+    <div>Correct: <span id="correct"></span></div>
+    <div>Incorrect: <span id="wrong"></span></div>
+  </div>
+    <div class="container1">
+    <div><h4>Time Remaining: </h4><span id="clock"></span></div>
+  <br>
+    <div class="row">
+      <div class="col-md-12">
+          <div><h3>In Charles Dickens novel <strong>A Tale of Two Cities</strong> what are the names of the two cities?</h3></div>
+            <div class="radio">
+              <label><input type="radio" name="optradio1" value=0>A. Boston and New York</label>
+          </div>
+          <div class="radio">
+              <label><input type="radio" name="optradio1" value=1>B. Rome and Venice</label>
+          </div>
+          <div class="radio">
+              <label><input type="radio" name="optradio1" value=2>C. Brussels and Moscow</label>
+          </div>
+          <div class="radio">
+              <label><input type="radio" name="optradio1" value=3>D. London and Paris</label>
+          </div>  
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div><h3>What is the title of the Steinbeck novel about Tom Joad and his family of migrant farm workers?</h3></div>
+            <div class="radio">
+              <label><input type="radio" name="optradio2" value=0>A. Cannery Row</label>
+          </div>
+          <div class="radio">
+              <label><input type="radio" name="optradio2" value=1>B. The Grapes of Wrath</label>
+          </div>
+          <div class="radio">
+              <label><input type="radio" name="optradio2" value=2>C. Of Mice and Men</label>
+          </div>
+          <div class="radio">
+              <label><input type="radio" name="optradio2" value=3>D. East of Eden</label>
+          </div>
+      </div>
+      </div>
+    <div class="row">
+      <div class="col-md-12">
+          <div><h3>Upton Sinclair's groundbreaking 1906 book <strong>The Jungle</strong> was primarily about which industry?</h3></div>
+            <div class="radio">
+              <label><input type="radio" name="optradio3" value=0>A. Steel</label>
+          </div>
+          <div class="radio">
+              <label><input type="radio" name="optradio3" value=1>B. Meatpacking</label>
+          </div>
+          <div class="radio">
+              <label><input type="radio" name="optradio3" value=2>C. Oil</label>
+          </div>
+          <div class="radio">
+              <label><input type="radio" name="optradio3" value=3>D. Shipping</label>
+          </div>  
+      </div>
+    </div> 
+    <div class="row">
+      <div class="col-md-12">
+          <div><h3>I had a passionate love affair while trapped in a loveless marriage. I teetered between highs and lows, before becoming disillusioned with my paramour. Most importantly, though, I enacted a dramatic suicide involving a train, ending all of my suffering. Which novel replays my melancholy saga?</h3></div>
+            <div class="radio">
+              <label><input type="radio" name="optradio4" value=0>A. War and Peace</label>
+          </div>
+          <div class="radio">
+              <label><input type="radio" name="optradio4" value=1>B. Family Happiness</label>
+          </div>
+          <div class="radio">
+              <label><input type="radio" name="optradio4" value=2>C. Youth</label>
+          </div>
+          <div class="radio">
+              <label><input type="radio" name="optradio4" value=3>D. Anna Karenina</label>
+          </div>  
+      </div>
+    </div> 
+    <div class="row">
+      <div class="col-md-12">
+        <div><h3>The 1920 book <strong>Main Street</strong> focused on the hypocrisy and shallowness of small town life in the U.S. Who was the author?</h3></div>
+            <div class="radio">
+              <label><input type="radio" name="optradio5" value=0>A. Theodore Dreiser</label>
+          </div>
+          <div class="radio">
+              <label><input type="radio" name="optradio5" value=1>B. Pearl Buck</label>
+          </div>
+          <div class="radio">
+              <label><input type="radio" name="optradio5" value=2>C. Sinclair Lewis</label>
+          </div>
+          <div class="radio">
+              <label><input type="radio" name="optradio5" value=3>D. Ernest Hemingway</label>
+          </div>
+      </div>
+      </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div><h3>Who is the author of <strong>1984</strong>?</h3></div>
+            <div class="radio">
+              <label><input type="radio" name="optradio6" value=0>A. Jules Verne</label>
+          </div>
+          <div class="radio">
+              <label><input type="radio" name="optradio6" value=1>B. Joseph Heller</label>
+          </div>
+          <div class="radio">
+              <label><input type="radio" name="optradio6" value=2>C. George Orwell</label>
+          </div>
+          <div class="radio">
+              <label><input type="radio" name="optradio6" value=3>D. Aldous Huxley</label>
+          </div>
+      </div>
+      </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div><h3>Kurt Vonnegut created this fictional autobiography of Rabo Karabekian. What was the title?</h3></div>
+            <div class="radio">
+              <label><input type="radio" name="optradio7" value=0>A. Bluebeard</label>
+          </div>
+          <div class="radio">
+              <label><input type="radio" name="optradio7" value=1>B. Slaughterhouse-Five</label>
+          </div>
+          <div class="radio">
+              <label><input type="radio" name="optradio7" value=2>C. Cat's Cradle</label>
+          </div>
+          <div class="radio">
+              <label><input type="radio" name="optradio7" value=3>D. Breakfast of Champions</label>
+          </div>
+      </div>
+      </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div><h3>Michael Chabon won the Puliter Prize for what novel?</h3></div>
+            <div class="radio">
+              <label><input type="radio" name="optradio8" value=0>A. Moonglow</label>
+          </div>
+          <div class="radio">
+              <label><input type="radio" name="optradio8" value=1>B. Wonder Boys</label>
+          </div>
+          <div class="radio">
+              <label><input type="radio" name="optradio8" value=2>C. The Amazing Adventures of Kavalier & Clay</label>
+          </div>
+          <div class="radio">
+              <label><input type="radio" name="optradio8" value=3>D. The Yiddish Policemans Union</label>
+          </div>
+          <div>
+          <input type="submit" id="submitTriviaAnswer" class="btn btn-info" value="Submit">
+          </div>
+      </div>
+      </div>
+  </div>  
+
+
+
+
+
+
+<script src="assets/javascript/app.js"></script>
+</body>
+</html>
